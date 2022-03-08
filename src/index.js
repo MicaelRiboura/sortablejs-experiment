@@ -1,4 +1,4 @@
-import Sortable from "./node_modules/sortablejs/modular/sortable.esm.js";
+import Sortable from "sortablejs/modular/sortable.esm";
 
 // Simple list
 Sortable.create(simpleList, { /* options */ });
