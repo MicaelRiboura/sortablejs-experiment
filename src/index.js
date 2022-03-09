@@ -22,9 +22,7 @@ const updateItem = (element, index) => {
 const updateList = () => {
 	sortable.el
 		.querySelectorAll('#simpleList > .list-group-item')
-		.forEach((element) => {
-			console.log(element);
-		});
+		.forEach(updateItem);
 }
 
 updateList();
