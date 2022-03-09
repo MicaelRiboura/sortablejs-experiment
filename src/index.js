@@ -14,7 +14,15 @@ const sortable = Sortable.create(simpleList, {
 
 
 
+const updateList = () => {
+	sortable.el
+		.querySelectorAll('#simpleList > .list-group-item')
+		.forEach((element) => {
+			console.log(element);
+		});
+}
 
+updateList();
 
 
  
