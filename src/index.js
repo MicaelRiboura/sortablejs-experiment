@@ -12,6 +12,11 @@ const sortable = Sortable.create(simpleList, {
  });
 
 
+const updateItem = (element, index) => {
+	const title = element.querySelector('.section-title');
+	title.innerText = String(title.innerText).replace(/[0-9]{1,}\./, '');
+	title.innerText = `${index + 1}. ${title.innerText}`;
+}
 
 
 const updateList = () => {
